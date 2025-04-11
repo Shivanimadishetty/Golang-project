@@ -1,0 +1,52 @@
+package main // This is the starting point of a Go program. It declares the package name.
+// "main" is the entry point of execution when the program is run.
+
+import "fmt"
+
+// This imports the "fmt" package which is used for formatted I/O operations like printing to the console.
+
+//func main() {
+	// The main function is the entry point of the program. Execution starts here.
+
+	// Variables are used to store data that can change during program execution.
+	// Syntax: var variableName = value
+	var exhibitionName = "Art Exhibition"
+
+	// 'exhibitionName' is a variable storing the name of the exhibition.
+
+	// Constants are similar to variables, but their value cannot be changed once set.
+	// Syntax: const constantName = value
+	const totalTickets = "50"
+	// 'totalTickets' is a constant representing the total number of tickets. It won't change during execution.
+
+	// Another variable to keep track of how many tickets are still available.
+	var remainingTickets = "50"
+	// 'remainingTickets' can be updated later when tickets are booked.
+
+	// fmt.Printf is used to print formatted output.
+	// %v is a placeholder that gets replaced by the value of the variable.
+	fmt.Printf("Welcome to my %v Hope you'll have a great time \n", exhibitionName)
+	// This line greets the user and includes the name of the exhibition using the 'exhibitionName' variable.
+
+	fmt.Printf("We have a total of %v tickets available and the number of tickets remaining are %v \n", totalTickets, remainingTickets)
+	// This line tells users how many total and remaining tickets are available.
+
+	fmt.Println("Book your tickets here")
+	// This simply prints a message prompting the user to book tickets.
+
+	//var userName1 string
+	//var userTickets int
+
+	//userName1 = "Ipsu"
+	//userTickets = 2
+
+	// or we can also define data types this way
+
+	///var ItemsBrought int = 3
+
+	//userName2 := "Cyrus"
+	// no need to use var keyword if := is used, but this only works for variables and not constants
+
+	//fmt.Printf("A user %v bought %v tickets and purchased %v items\n", userName1, userTickets, ItemsBrought)
+	//fmt.Printf("A user %v bought %v tickets and purchased %v items\n", userName2, userTickets, ItemsBrought)
+}
