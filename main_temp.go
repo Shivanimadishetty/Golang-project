@@ -7,7 +7,7 @@ func main() {
 	var exhibitionName = "Art Exhibition"
 	const totalTickets = "50"
 	var remainingTickets uint = 50
-	var Bookings [50]string
+	var Bookings []string
 
 	fmt.Printf("Welcome to my %v Hope you'll have a great time \n", exhibitionName)
 	fmt.Printf("We have a total of %v tickets available and the number of tickets remaining are %v \n", totalTickets, remainingTickets)
@@ -31,13 +31,9 @@ func main() {
 	fmt.Scanln(&userTickets)
 
 	remainingTickets = remainingTickets - userTickets
-	Bookings[0] = FirstName + " " + LastName
+	Bookings = append(Bookings, FirstName+" "+LastName)
 
 	fmt.Printf("\nThank you %v %v for booking %v tickets! \n", FirstName, LastName, userTickets)
 	fmt.Printf("You will receive a confirmation on your email address %v \n", Email)
-	fmt.Printf("%v tickets remaing for %v \n", remainingTickets, exhibitionName)
-	fmt.Printf("The whole array %v: \n", Bookings)
-	fmt.Printf("The First value %v: \n", Bookings[0])
-	fmt.Printf("The array type %T: \n", Bookings)
-	fmt.Printf("The array length %v: \n", len(Bookings))
+	fmt.Printf("These are all our bookings %v \n", Bookings)
 }
